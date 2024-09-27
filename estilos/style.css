@@ -2,9 +2,6 @@
 
 /*
     paleta de cores
-
-
-
 */
 
 *{
@@ -16,7 +13,7 @@
 }
 
 body, html{
-    background-color: rgb(112, 70, 70);
+    background-color: rgb(165, 29, 29);
     height: 100vh;
     width: 100vw;
 }
@@ -37,6 +34,8 @@ main{
     height: 500px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349);
+    transition: width .4s, height .4s;
+    transition-timing-function: ease;
 }
 
 section#login > div#imagen{
@@ -48,6 +47,8 @@ section#login > div#imagen{
 
 section#login > div#formulario{
     display: block;
-    padding: 20px;
+    padding: 10px;
 }
+
+
 
