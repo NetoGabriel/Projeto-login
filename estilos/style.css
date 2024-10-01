@@ -26,14 +26,16 @@ main{
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    text-align: center;
     overflow: hidden;
 
     background-color: white;
     width: 300px;
-    height: 570px;
+    height: 600px;
     border-radius: 20px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.349);
+
+    transform: translate(-50%,-50%);
     transition: width .4s, height .4s;
     transition-timing-function: ease;
 }
@@ -41,6 +43,7 @@ main{
 section#login > div#imagen{
     display: block;
     background: black url(../imagens/img_log.jpg) no-repeat;
+    background-position: left bottom;
     background-size:cover;
     height: 300px;
 } 
@@ -48,6 +51,43 @@ section#login > div#imagen{
 section#login > div#formulario{
     display: block;
     padding: 10px;
+}
+
+form > div.campo{
+    background-color:rgb(155, 32, 32);
+    border: 2px solid rgb(155, 32, 32);
+    display: block;
+    width: 100%;
+    height: 35px;
+    border-radius: 8px;
+    margin: 5px 0px;
+}
+
+div.campo > label{
+    display: none;
+}
+
+div.campo > span{
+    color: white;
+    /*background-color: black;*/
+    font-size: 1.8em;
+    width: 40px;
+    padding: 5px;
+}
+
+div.campo > input{
+    background-color:rgb(160, 52, 52);
+    font-size: 1em;
+    width: calc(100% - 45px);
+    height: 100%;
+    border: 0px;
+    border-radius: 8px;
+    padding: 4px;
+    transform:translateY(-11px);
+}
+
+div.campo > input:focus-within{
+    background-color: white;
 }
 
 form > input[type=submit] {
